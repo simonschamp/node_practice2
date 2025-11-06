@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/css/materialize.min.css"
+    />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.1.0/dist/js/materialize.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="wall.js" defer></script>
+    <link rel="stylesheet" href="wall.css" />
+  </head>
+  <body>
+    <div id="main-canvas">
+      <header>
+        <nav class="red darken-2">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo left">Cool App</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"
+              ><i class="material-irocns">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">Architecture</a></li>
+              <li><a href="#">Responsive</a></li>
+              <li><a href="#">Mobile</a></li>
+            </ul>
+          </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Responsive</a></li>
+          <li><a href="#">Mobile</a></li>
+        </ul>
+      </header>
+      <main class="container section">
+        <ul id="the-wall" class="row">
+          <li class="col s6 m4 13 flow-text">
+            Diamonds are beutifull, Gold is precious, the sky is blue so is the
+            oceans, the stars shine, the rainbow is colorful, the mind is as
+            bright as a new day.
+          </li>
+          <li class="col s6 m4 13 flow-text">
+            Diamonds are beutifull, Gold is precious, the sky is blue so is the
+            oceans, the stars shine, the rainbow is colorful, the mind is as
+            bright as a new day.
+          </li>
+          <li class="col s6 m4 13 flow-text">
+            Diamonds are beutifull, Gold is precious, the sky is blue so is the
+            oceans, the stars shine, the rainbow is colorful, the mind is as
+            bright as a new day.
+          </li>
+          <li class="col s6 m4 13 flow-text vip">
+            Diamonds are beutifull, Gold is precious, the sky is blue so is the
+            oceans, the stars shine, the rainbow is colorful, the mind is as
+            bright as a new day.
+          </li>
+        </ul>
+        <div id="poem-controls">
+          <label for="poem-input">Write your poem</label>
+          <textarea
+            name="poem-input"
+            id="poem-input"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label for="vip">
+            <input type="checkbox" name="vip" id="vip" /><span
+              >Very important poem</span
+            >
+          </label>
+          <button id="add-poem" class="btn pink">send poem</button>
+          <button id="add-poem-from-api" class="btn pink waves-effect">
+            Get poems from API
+          </button>
+        </div>
+        <div class="plain-txt">
+          <h3>Note: This app respons to mobile view!</h3>
+        </div>
+      </main>
+      <footer class="page-footer red darken-2 section">
+        Copyright Cool App Inc. 2025
+      </footer>
+    </div>
+  </body>
+</html>
