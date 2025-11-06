@@ -6,7 +6,7 @@
   "author": "",
   "type": "module",
   "main": "dist/server.ts",
-  "homepage": "https://simonschamp.github.io/project2",
+  "homepage": "https://simonschamp.github.io/node_practice2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc-watch --onSuccess \"node --enable-source-maps dist/server.js\"",
