@@ -3,7 +3,7 @@ import express, {} from "express";
 import morgan from "morgan";
 import path from "path";
 import { fileURLToPath } from "url";
-import router from "./index.js"; //must include .js for ESM
+import router from "./router.js"; //must include .js for ESM
 import cors from "cors";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,6 +20,6 @@ app.use(express.static(path.join(__dirname, "../public")));
 // Routes
 app.use("/", router);
 app.listen(port, () => {
-    console.log(`Server running on http://localhost: ${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });
 //# sourceMappingURL=server.js.map
